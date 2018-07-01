@@ -5,16 +5,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SUT.UnitTests
+namespace SystemUnderTest
 {
     [TestFixture]
     public class TestClass
     {
         [Test]
-        public void TestMethod()
+        public void PassingTest()
         {
             // TODO: Add your test code here
             Assert.Pass("Your first passing test");
+        }
+
+        [Test]
+        public void FailingTest()
+        {
+            // TODO: Add your test code here
+            Assert.Fail("Your first failing test");
         }
     }
 }
