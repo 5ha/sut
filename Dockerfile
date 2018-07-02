@@ -1,3 +1,4 @@
-﻿FROM microsoft/dotnet-framework
+﻿FROM shawnseabrook/testrunner
 WORKDIR /app
-COPY SystemUnderTest/ .
+COPY ..
+WORKDIR /tester
