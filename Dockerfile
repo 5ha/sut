@@ -1,4 +1,4 @@
 ﻿FROM shawnseabrook/testrunner
 WORKDIR /app
-COPY ..
+COPY . .
 WORKDIR /tester
