@@ -1,4 +1,4 @@
-﻿FROM microsoft/dotnet-framework
+﻿FROM shawnseabrook/testrunner:14
 WORKDIR /app
 COPY Publish/SystemUnderTest .
-WORKDIR /app/lib
+WORKDIR /tester
