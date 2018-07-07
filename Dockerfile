@@ -1,3 +1,4 @@
 ﻿FROM microsoft/dotnet-framework
 WORKDIR /app
-COPY . .
+COPY Publish/SystemUnderTest .
+WORKDIR /app/lib
