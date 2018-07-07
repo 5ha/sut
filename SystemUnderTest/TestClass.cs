@@ -23,5 +23,11 @@ namespace SystemUnderTest
             // TODO: Add your test code here
             Assert.Fail("Your first failing test");
         }
+
+        [Test]
+        public void ThirdTest()
+        {
+            Assert.Pass("Third test passed");
+        }
     }
 }
