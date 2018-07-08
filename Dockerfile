@@ -1,4 +1,4 @@
-﻿FROM shawnseabrook/testrunner:15
+﻿FROM shawnseabrook/testrunner:17
 WORKDIR /app
 COPY Publish/SystemUnderTest .
 WORKDIR /tester
