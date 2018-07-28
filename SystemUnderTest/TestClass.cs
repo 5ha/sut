@@ -41,5 +41,41 @@ namespace SystemUnderTest
         {
             Assert.Pass("Fifth test passed");
         }
+
+        [Test]
+        public void Test6()
+        {
+            Assert.Pass("Fifth test passed");
+        }
+
+        [Test]
+        public void Test7()
+        {
+            Assert.Pass("Fifth test passed");
+        }
+
+        [Test]
+        public void Test8()
+        {
+            Assert.Pass("Fifth test passed");
+        }
+
+        [Test]
+        public void Test9()
+        {
+            Assert.Pass("Fifth test passed");
+        }
+
+        [Test]
+        public void Test10()
+        {
+            Assert.Pass("Fifth test passed");
+        }
+
+        [Test]
+        public void Test11()
+        {
+            Assert.Pass("Fifth test passed");
+        }
     }
 }
