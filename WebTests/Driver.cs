@@ -12,7 +12,10 @@ namespace WebTests
 
         internal static void Initialize()
         {
-            Instance = new ChromeDriver();
+            ChromeOptions options= new ChromeOptions();
+            options.AddArgument("headless");
+            Instance = new ChromeDriver(options);
+
             TurnOnWait();
             Instance.Manage().Window.Maximize();
         }
