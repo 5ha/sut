@@ -14,6 +14,8 @@ namespace WebTests
         {
             ChromeOptions options= new ChromeOptions();
             options.AddArgument("headless");
+            options.AddArgument("no-sandbox");
+            options.AddArgument("disable-dev-shm-usage");
             Instance = new ChromeDriver(options);
 
             TurnOnWait();
