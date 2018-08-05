@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
 using System;
 
 namespace WebTests
@@ -12,12 +13,14 @@ namespace WebTests
 
         internal static void Initialize()
         {
-            ChromeOptions options= new ChromeOptions();
-            options.AddArgument("headless");
-            options.AddArgument("no-sandbox");
-            options.AddArgument("disable-dev-shm-usage");
-            Instance = new ChromeDriver(options);
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--headless");
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
+            options.AddArgument("--window-size=1400,1400");
+            //Instance = new ChromeDriver(options);
 
+            Instance = new RemoteWebDriver(new Uri("http://127.0.0.1:4444/wd/hub"), options.ToCapabilities());
             TurnOnWait();
             Instance.Manage().Window.Maximize();
         }
