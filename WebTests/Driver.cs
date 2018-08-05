@@ -20,7 +20,7 @@ namespace WebTests
             options.AddArgument("--window-size=1400,1400");
             //Instance = new ChromeDriver(options);
 
-            Instance = new RemoteWebDriver(new Uri("http://127.0.0.1:4444/wd/hub"), options.ToCapabilities());
+            Instance = new RemoteWebDriver(new Uri("http://server:4444/wd/hub"), options.ToCapabilities());
             TurnOnWait();
             Instance.Manage().Window.Maximize();
         }

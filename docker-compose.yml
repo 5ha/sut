@@ -1,0 +1,8 @@
+version: "3"
+services:
+  tester:
+    image: tester
+  server:
+    image: selenium/standalone-chrome
+    ports:
+      - "4444:4444"
