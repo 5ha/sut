@@ -2,6 +2,8 @@ version: "3"
 services:
   tester:
     image: shawnseabrook/build:|BUILD|
+    depends_on: "server"
+    command: ["RunTests.exe"]
   server:
     image: selenium/standalone-chrome
     ports:
